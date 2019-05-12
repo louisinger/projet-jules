@@ -1,0 +1,182 @@
+
+/*--------------------------------------------------------Page 1-----------------------------------------------------------------------------*/
+.page1{
+    background-size: cover;
+    background-color:white;
+    background-image: url("enigma.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+#boutons{
+
+    display: flex;
+}
+
+.auteur{
+    display: block;
+    margin-bottom: -10%;
+    width: 15%;
+    height: 20%;
+    border-radius:12% 12% 12% 12%;
+    background: black;
+    border:none;
+    color:#fff;
+    font:bold 12px Verdana;
+    padding: 0.5% ;
+    font-size: 185%;
+    color : white;
+}
+
+.boutonjouer{
+    margin-top: 157%;
+    margin-left : 20%;
+    border-radius:12px 12px 12px 12px;
+    background: black;
+    border:none;
+    color:#fff;
+    font:bold 12px Verdana;
+    padding: 0.5% ;
+    font-size: 240%;
+    transform: rotate(-9deg); 
+    color : darkred; 
+    padding: 5%;
+}
+
+.boutonjouer2{
+    border-radius:12px 12px 12px 12px;
+    background: black;
+    margin-top: 105%;
+    margin-left : 240%;
+    border:none;
+    color:#fff;
+    font:bold 12px Verdana;
+    padding: 0.5% ;
+    font-size: 240%;
+    transform: rotate(-9deg); 
+    color : darkgreen; 
+    padding: 5%;
+}
+
+
+
+/*--------------------------------------------------------Page 2-----------------------------------------------------------------------------*/
+
+.page2{
+    background-color: black;
+
+
+}
+
+.scenario1{
+    text-align: center;
+    font-size: 65px;
+    color: white;
+}
+
+.boutonbureau{
+    display: block;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top: 3%;
+    margin-bottom: 800;
+    padding : 1%;
+    font-size: 55px;
+    border-radius:12px 12px 12px 12px;
+    border:none;
+    background: grey;
+    color : white;
+
+}
+/*--------------------------------------------------------Page 3---------------------------------------------------------*/
+
+.page3{
+    background-size: cover;
+    background-image: url("ouestlacle.PNG");
+    background-repeat : no-repeat;
+    background-attachment: fixed;
+
+}
+
+#alignement{
+
+    display: flex;
+}
+
+
+.cle{
+    margin-left :5%;
+    margin-top: 13.5%;
+    width : 7%;
+
+}
+
+.nom{
+    font-size:  x-large;
+    display: block;
+    position: absolute;
+    bottom: 12%;
+    margin-left : 41%;
+    transform: rotate(22deg);
+    font-weight: bolder;
+    font-family:Courier New, monospace; 
+}
+/*--------------------------------------------------------Page 4---------------------------------------------------------*/
+
+.page4{
+
+    background-color: black;
+
+}
+
+.scenario2{
+    text-align: center;
+    font-size: 65px;
+    color: white;
+}
+
+
+.boutonporte{
+    display: block;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top: 3%;
+    margin-bottom: 800;
+    padding : 1%;
+    font-size: 300%;
+    border-radius:20px 20px 20px 20px;
+    border:none;
+    background: grey;
+    color : white;
+}
+/*--------------------------------------------------------Page 5---------------------------------------------------------*/
+
+.page5{
+
+    background-color: green;
+
+   
+   
+  }
+
+#mdp{
+
+    display: flex;
+    justify-content: center;
+    height: 730%;
+}
+
+
+.boutAccueil{
+
+    font-size: 100%;
+    background-color: red;
+    color : white;
+    text-align: center;
+    position: relative;
+    left: 92%;
+  
+}
+

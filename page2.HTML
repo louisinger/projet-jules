@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="projet.css">
+	<title>Chapitre I : Le réveil...</title>
+	<script src="appl.JS"></script>
+
+</head>
+
+<body class="page2">
+
+	
+
+			<input type="submit" value="Abandonner" class="boutAccueil" onclick ="confirmation(form)">
+
+		
+
+	<h1 class="scenario1"> Chapitre I : Un réveil pas comme les autres... </h1>
+
+		<DIV STYLE="width:1350;height:500;background:BLACK;color:white;border-style:solid;font-family:verdana;font-size:200%;font-style:italic;" ID=bloc></DIV>
+
+			<SCRIPT LANGUAGE=JavaScript>
+
+				var chaine = "Etourdi, vos yeux semblent s'entrouvrir, vous vous sentez faible, accompagné d'un sentiment désagréable qu'il s'était passé quelquechose sans savoir quoi. Apres quelques secondes vous reprenez entièrement connaissance, nul besoin de beaucoup de temps pour vous rendre compte que vous n'êtes pas chez vous. Seul, dans une pièce sombre, sans fenêtres, avec un lit délabré et un bureau éclairé par une bougie déja presque entièrement fondu. Impossible de se souvenir comment vous etes arrivé la. Paniqué, vous vous dirigez alors vers le bureau dans l'espoir d'apprendre quelquechose...\nObservez tous les éléments, une information en plus d'un objet vous sera surement d'une grande aide par la suite... ";
+
+				var nombre_lettre = chaine.length; 
+				var tableau = chaine.split("");
+				texte = new Array;
+				var txt = '';
+				var nb_msg = nombre_lettre - 1;
+				for (i=0; i<nombre_lettre; i++) {
+				texte[i] = txt+tableau[i];
+				var txt = texte[i];
+				}
+
+				texte_actuel = 0;
+				function changeMessage()
+				{
+				document.getElementById("bloc").innerHTML = texte[texte_actuel];
+				texte_actuel++;
+				if(texte_actuel >= texte.length)
+				texte_actuel = nb_msg;
+				}
+				if(document.getElementById)
+
+				setInterval("changeMessage()",1) 
+
+
+				
+
+</SCRIPT>
+		
+		<form action="page3.HTML" >
+
+			<input type="submit" value="Voir le bureau" class="boutonbureau">
+
+		</form>
+
+		
+
+</body>
+
+</html>

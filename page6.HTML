@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enigme 3 !</title>
+	<link rel="stylesheet" type="text/css" href="projet.css">
+	<meta charset="utf-8">
+	<script src="appl.js"></script>
+
+</head>
+<body class="page6">
+
+		<input type="submit" value="Abandonner" class="boutAccueil" onclick ="confirmation(form)">
+	 
+
+		<form>
+
+			<input type="text" name="mdp1" id onKeyPress="if (event.keyCode == 13) verification2(form)" autocomplete="off"> 
+			<input type="text" name="mdp2" id onKeyPress="if (event.keyCode == 13) verification2(form)" autocomplete="off"> 
+			<input type="text" name="mdp3" id onKeyPress="if (event.keyCode == 13) verification2(form)" autocomplete="off"> 
+			<input type="button" value="Ouvrir la porte" onclick="verification2(form)" class="mdp2">	
+		</form>
+
+
+		<script language ="javascript">
+
+
+			function valider(){
+
+				document.location.href="page2.HTML"; 
+
+			}	
+
+			function verification2(form){
+
+				var mdp1 = form.mdp1.value;
+				var mdp2 = form.mdp2.value;
+				var mdp3 = form.mdp3.value;
+					
+				if (mdp1 == 1 && mdp2 == 5 && mdp3 == 2){
+
+					valider();
+					Alert ("Excellent");
+				} else{
+
+					alert("Tu t'es trompé");
+				}
+
+			}
+			
+		</script>
+
+
+</body>
+</html>

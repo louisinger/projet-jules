@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+
+		<meta charset="utf-8">
+    	<link rel="stylesheet" href="projet.css">
+		<title> Enigme 2 !</title>
+		<script src="appl.js"></script>
+
+	</head>
+
+	<body class="page5">
+
+			<input type="submit" value="Abandonner" class="boutAccueil" onclick ="confirmation(form)">
+
+			
+
+		<form>
+
+					 <input type="text" name="mdp" id onKeyPress="if (event.keyCode == 13) verification(form)" autocomplete="off"> <br>
+					<input type="button" value="Ouvrir la porte" onclick="verification(form)" class="mdp2">	
+		</form>
+
+
+			<script language ="javascript">
+
+							
+
+			
+							function valider(){
+
+							  	document.location.href="page6.HTML"; 
+
+							}	
+
+							
+
+							function verification(form){
+
+								var motDePasse = form.mdp.value;
+								var motDePasse1 = "sherlock"
+								var motDepasse2 = "Sherlock"
+								var motDepasse3 = "SHERLOCK"
+
+								if(motDePasse == motDePasse1 || motDePasse == motDepasse2 || motDePasse == motDepasse3){
+
+									
+											valider();
+											alert("Mot de passe valide !")
+
+								}
+								
+								else{
+											alert("Veuillez m'excusez, mot de passe invalide.")
+								}
+
+							}
+
+			</script>
+
+	</body>
+	</html>
